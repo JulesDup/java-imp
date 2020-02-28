@@ -16,17 +16,9 @@ public class RechercheMax {
 
 		}
 
-		// Recherche Max
-		int nbMin = Integer.MAX_VALUE;
-		for (int i = 0; i < tabSize; i++) {
 
-			if (array[i] < nbMin) {
-				nbMin = array[i];
-			}
-
-		}
 		System.out.println("Le numbre du tableau le plus haut est : " + nbMax);
-		System.out.println("Le numbre du tableau le plus bas est : " + nbMin);
+
 
 	}
 }
