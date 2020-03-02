@@ -16,15 +16,12 @@ public class InteractifChiffresSuivants {
 		Scanner saisie = new Scanner(System.in);
 		System.out.println("Donnez moi un chiffre et je vous donnerai les 10 suivant !");
 		int nb = saisie.nextInt();
-		String rep = null;
+		String rep = "N";
+		System.out.println("Vous avez choisie : " + nb + ". Voulez vous continuer ? (O/N)");
+		do {
+			rep = saisie.nextLine();
+		} while (rep != "o");
 
-// POURQUOI NE FONCTIONNE PAS ??		
-//		do {
-//			System.out.println("Vous avez choisie : " + nb + ". Voulez vous continuer ? (O/N)");
-//			rep = saisie.nextLine();
-//		} while (rep != "O");
-		
-		
 		InteractifChiffresSuivants interactifChiffresSuivants = new InteractifChiffresSuivants();
 		int[] tabRep = interactifChiffresSuivants.chiffreSuivant(nb);
 		for (int i = 0; i < 10; i++) {
