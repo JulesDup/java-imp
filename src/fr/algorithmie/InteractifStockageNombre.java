@@ -26,9 +26,11 @@ public class InteractifStockageNombre {
 			if (num == 1) {
 				System.out.println("quel est votre chiffre ?");
 				int chiffre = saisie.nextInt();
+				
 				// initalisation du tableau pour la premiere valeur
 				if (tab.length == 1 && tab[0] == 0) {
 					tab[0] = chiffre;
+					
 					// Remplisage tableau +1
 				} else {
 					tab = interactifStockageNombre.enregistrerNombre(chiffre, tab);
